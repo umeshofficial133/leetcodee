@@ -16,8 +16,8 @@ class Solution {
                     curr_num++;
                     curr_length++;
                 }
-                max_length=Math.max(max_length,curr_length);
             }
+            max_length=Math.max(max_length,curr_length);
         }
         return max_length;
     }
