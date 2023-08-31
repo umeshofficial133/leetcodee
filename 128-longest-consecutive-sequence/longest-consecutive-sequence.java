@@ -11,7 +11,7 @@ class Solution {
             int curr_num=nums[i];
             int curr_length=1;
             //if num-1 exists then dont proceed. we will proceed only if it is the smallest in its sequence
-            if(!hash_set.contains(nums[i]-1)){
+            if(!hash_set.contains(curr_num-1)){
                 while(hash_set.contains(curr_num+1)){
                     curr_num++;
                     curr_length++;
