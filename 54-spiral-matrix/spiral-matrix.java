@@ -21,7 +21,8 @@ class Solution {
             right--;
 
             //get every bottom element
-            if(top<=bottom){
+            if(top<=bottom){ 
+                //if there is only one row then it will not satisfy this if
                 for(int i=right;i>=left;i--){
                 result.add(matrix[bottom][i]);
             }
@@ -30,12 +31,13 @@ class Solution {
 
             //get every left element
             if(left<=right){
-            for(int i=bottom;i>=top;i--){
-                result.add(matrix[i][left]);
+                //if there is only one column then it will not satisfy this if
+                for(int i=bottom;i>=top;i--){
+                    result.add(matrix[i][left]);
+                }
+                left++;
             }
-            left++;
-            }
-            
+
         }
 
         return result;
